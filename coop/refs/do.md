@@ -1,6 +1,6 @@
-# !do
+# !coop do
 
-> alias: `/do`
+> alias: `/coop do`
 
 ## Description
 

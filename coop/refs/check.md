@@ -1,6 +1,6 @@
-# !check
+# !coop check
 
-> alias: `/check`
+> alias: `/coop check`
 
 ## Description
 

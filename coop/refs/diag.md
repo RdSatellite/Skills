@@ -1,6 +1,6 @@
-# !diag
+# !coop diag
 
-> alias: `/diag`
+> alias: `/coop diag`
 
 ## Description
 

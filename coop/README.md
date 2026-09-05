@@ -2,15 +2,15 @@
 
 A set of basic AI–human cooperation skills that I use most of the time.
 
-They are:
+They are all invoked through the single `!coop` prefix so every command stays in one obvious, restricted scope:
 
-- `!do`: Mark a specific place in the code and ask AI to implement it for you.
+- `!coop do`: Mark a specific place in the code and ask AI to implement it for you.
 
-> I usually write the pseudo-code myself and ask AI to translate it when I forget some language-specific details via !do, or some insignificant changes.
+> I usually write the pseudo-code myself and ask AI to translate it when I forget some language-specific details via `!coop do`, or for some insignificant changes.
 
-- `!try`: Give AI a known requirement and let it try to implement it for you. You review the result before applying any changes.
-- `!check`: Make some changes yourself and ask AI to review them.
-- `!diag`: Identify a problem at a specific place and ask AI to investigate it and provide diagnostic advice, without implementing anything.
+- `!coop try`: Give AI a known requirement and let it try to implement it for you. You review the result before applying any changes.
+- `!coop check`: Make some changes yourself and ask AI to review them.
+- `!coop diag`: Identify a problem at a specific place and ask AI to investigate it and provide diagnostic advice, without implementing anything.
 
 Notice that every command is intentionally scoped to a small problem. This is because I don't want code changes to take control away from me. **You should know every line of your repository**.
 

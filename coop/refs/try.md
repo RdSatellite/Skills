@@ -1,6 +1,6 @@
-# !try
+# !coop try
 
-> alias: `/try`
+> alias: `/coop try`
 
 ## Description
 
