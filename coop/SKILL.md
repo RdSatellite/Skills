@@ -16,7 +16,6 @@ This file is the router for the coop skill. Each mode has an authoritative compa
 
 Do not substitute the behavior described here for the authoritative companion file.
 
-Only these four exact commands trigger a mode: `!coop do`, `!coop try`, `!coop check`, and `!coop diag`. Bare mode words (for example `do` or `check`) or other spellings do not trigger coop behavior.
 
 ## Modes
 

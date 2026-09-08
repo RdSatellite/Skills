@@ -18,7 +18,6 @@ Each `!mem` sub command has an authoritative instruction file under `refs/`. Whe
 
 ## Shared rules
 
-- Only the exact commands `!mem init` and `!mem save` trigger this skill. Bare words such as `memory` or `save` do not.
 - Read the existing memory files before editing so updates extend the recorded context instead of replacing it.
 - Keep `MEMORY.md` concise and overview-level because it is read at the start of every session. Detailed changes, decisions, and history belong in the progress files.
 - If a required precondition is missing—for example, no memory structure exists when handling !mem save—stop and report the problem. Do not guess or silently create missing structures.
