@@ -1,6 +1,6 @@
 # !mem init
 
-> alias: `/mem init`
+> alias: `!init`
 
 ## Description
 

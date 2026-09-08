@@ -1,6 +1,6 @@
 # !mem save
 
-> alias: `/mem save`
+> alias: `!save`
 
 ## Description
 
