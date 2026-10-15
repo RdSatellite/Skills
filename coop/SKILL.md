@@ -1,6 +1,6 @@
 ---
 name: coop
-description: Coordinate cooperative coding sessions through the scoped `!coop` namespace - `!coop do` (complete clearly marked TODOs), `!coop try` (stage a proposed change without editing code), `!coop check` (review applied changes), and `!coop diag` (diagnose a problem and propose a fix). Use only when the user writes one of these exact `!coop <mode>` forms; ignore bare mode words such as do or check, and never apply coop behavior to ordinary coding requests.
+description: Coordinate cooperative coding sessions through the scoped `!coop` namespace - `!coop do` (alias `!do`, complete clearly marked TODOs), `!coop try` (alias `!try`, stage a proposed change without editing code), `!coop check` (alias `!check`, review applied changes), and `!coop diag` (alias `!diag`, diagnose a problem and propose a fix), plus the derived `!coop try --reject` (alias `!reject`, the user rejected the proposal). Use only when the user writes one of these exact forms; ignore bare mode words such as do or check, and never apply coop behavior to ordinary coding requests.
 ---
 
 # Coop
@@ -19,12 +19,13 @@ Do not substitute the behavior described here for the authoritative companion fi
 
 ## Modes
 
-| Trigger | Instruction file | What to do |
-| --- | --- | --- |
-| `!coop do` | `refs/do.md` | Some positions are marked as TODOs. Gather the necessary context and implement those TODO items. A clearly marked TODO must exist in recently modified content (for example, a #TODO comment); otherwise stop and request a specification. |
-| `!coop try` | `refs/try.md` | A clear implementation instruction needs an attempt. Do not modify source code directly. Instead, write the proposed change into `.agent/ref.*`, clearing stale content first, so the user can review and apply it. The target instruction must be identifiable from the current conversation context. |
-| `!coop check` | `refs/check.md` | Review changes that have already been applied, most likely changes discussed recently. Report findings in chat only. Make no modifications. |
-| `!coop diag` | `refs/diag.md` | Diagnose the problem at the location or component identified by the user and propose a solution. Report in chat only. Make no modifications. |
+| Trigger | Alias | Instruction file | What to do |
+| --- | --- | --- | --- |
+| `!coop do` | `!do` | `refs/do.md` | Some positions are marked as TODOs. Gather the necessary context and implement those TODO items. A clearly marked TODO must exist in recently modified content (for example, a #TODO comment); otherwise stop and request a specification. |
+| `!coop try` | `!try` | `refs/try.md` | A clear implementation instruction needs an attempt. Do not modify source code directly. Instead, write the proposed change into `.agent/ref.*`, clearing stale content first, so the user can review and apply it. The target instruction must be identifiable from the current conversation context. |
+| `!coop check` | `!check` | `refs/check.md` | Review changes that have already been applied, most likely changes discussed recently. Report findings in chat only. Make no modifications. |
+| `!coop diag` | `!diag` | `refs/diag.md` | Diagnose the problem at the location or component identified by the user and propose a solution. Report in chat only. Make no modifications. |
+| `!coop try --reject` | `!reject` | `refs/try.md` | The user rejected the proposal. Listen to their idea before proposing anything again. |
 
 ## Shared rules
 

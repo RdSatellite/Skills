@@ -20,4 +20,10 @@ The trade-off is control: you can gradually master the entire repository instead
 
 For code that implements an already-identified requirement—meaning you have already expected the change and built the necessary abstract structure beforehand, such as creating a class and later implementing a method—you can let AI handle the implementation more freely.
 
-See also the `Sense Bundle`.
+See also the `Arch Bundle`.
+
+---
+
+> Sega Lee
+>
+> Sept. 2026

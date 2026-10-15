@@ -1,3 +1,0 @@
-# Sense Skill Bundle
-
-WIP

@@ -1,6 +1,6 @@
 ---
 name: mem
-description: Manage cross-session project memory through the scoped `!mem` namespace - `!mem init` (create the initial memory structure) and `!mem save` (confirm a milestone and record progress in the memory files). Use only when the user invokes the exact `!mem init` or `!mem save` command; ignore bare memory words and ordinary requests.
+description: Manage cross-session project memory through the scoped `!mem` namespace - `!mem init` (alias `!init`, create the initial memory structure) and `!mem save` (alias `!save`, confirm a milestone and record progress in the memory files). Use only when the user invokes one of these exact forms; ignore bare memory words and ordinary requests.
 ---
 
 # Mem
@@ -11,10 +11,10 @@ Each `!mem` sub command has an authoritative instruction file under `refs/`. Whe
 
 ## Commands
 
-| Trigger | Instruction file | What to do |
-| --- | --- | --- |
-| `!mem init` | `refs/init.md` | The project has just been established. Create the memory structure (`.agent/` with `MEMORY.md`), then ask the user about the project's purpose if it is not already known. |
-| `!mem save` | `refs/save.md` | The project has reached a milestone. Confirm the changes, then update the memory files to record the progress. If no `.agent/` memory structure exists, the project has not been initialized: stop and report. |
+| Trigger | Alias | Instruction file | What to do |
+| --- | --- | --- | --- |
+| `!mem init` | `!init` | `refs/init.md` | The project has just been established. Create the memory structure (`.agent/` with `MEMORY.md`), then ask the user about the project's purpose if it is not already known. |
+| `!mem save` | `!save` | `refs/save.md` | The project has reached a milestone. Confirm the changes, then update the memory files to record the progress. If no `.agent/` memory structure exists, the project has not been initialized: stop and report. |
 
 ## Shared rules
 
