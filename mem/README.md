@@ -17,3 +17,5 @@ To manage project memory effectively, the bundle uses at least two types of file
 ---
 
 > Sega Lee
+>
+> Sept. 2026
